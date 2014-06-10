@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -48,32 +48,30 @@
 					</p>
 				</section>
 
-				<section>
-					<h2>Outline</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+					<section>
+						<h2>OUTLINE</h2>
+						<ol>
+							<li>A Little Introduction</li>
+							<li>Augmented Reality</li>
+							<li>Theory and Experimental Studies</li>
+							<li>Results and Conclusion</li>
+						</ol>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
 
 				<!-- Example of nested vertical slides -->
-				<!--<section>
+				<section>
 					<section>
-						<h2>Vertical Slides</h2>
+						<h2>A LITTLE INTRODUCTION</h2>
 						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
+							What have I done and why have I done it?
 						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
-					<section>
-						<h2>Basement Level 1</h2>
+				<!-- 	<section>
+						<h2></h2>
 						<p>Press down or up to navigate.</p>
 					</section>
 					<section>
@@ -82,24 +80,255 @@
 						<a class="test" href="http://cornify.com">
 							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
 						</a>
+					</section> -->
+					<section>
+						<h2>Sweco Position</h2>
+						<p>Consulting company who focuses on IT for urban development</p>
+			
 					</section>
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Aim and Purpose</h2>
+						<p class="fragment" ><em><strong>What:</strong></em> Examine the possibilities of the off-the-shelf library OpenCV when developing markerless augmented reality applications.</p>
+							<p class="fragment"><em><strong>How:</strong></em> By implementing the structure from motion algorithm with algorithms provided by OpenCV</p>
+			
 					</section>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
+					<section>
+						<h2>AUGMENTED REALITY</h2>
 					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
+						What is Augmented Reality?
 					</p>
+
+					</section>
+					<section>
+						<h2>Definition of AR</h2>
+					
+						<ul>
+							<li class="fragment" >It combines real and virtual objects</li>
+							<li class="fragment" >You can interact with the application in real time</li>
+							<li class="fragment" >It is registered in 3D</li>
+						</ul>				
+
+					</section>
+					<section>
+						<h2>Tracking in AR</h2>
+						<p>Tracking provides information about the users viewpoint or the camera position and orientation in 6 DoF. There are different tracking approaches:</p>
+						<ul>
+							<li class="fragment" >Sensor-based tracking</li>
+							<li class="fragment" >Vision-based tracking</li>
+							<li class="fragment" >Hybrid techniques</li>
+
+						</ul>	
+
+
+					</section>
+					<section>
+						<h2>Markerbased AR </h2>
+						<div><div style = float:left><p>Pros:</p>
+						<ul>
+							<li class="fragment" >Robust, good alignment           </li>
+							<li class="fragment" >Fast</li>
+
+						</ul>	
+						</div>
+						<div style = float:right>
+						<p >Cons:
+						<ul>
+							<li class="fragment" >Preparing environment</li>
+							<li class="fragment" >Occlusion of marker</li>
+						</ul>	
+						
+						</p></div>
+					</div>
+
+					</section>
+						<section>
+						<h2>Markerless AR </h2>
+						<div><div style = float:left><p>Pros:</p>
+						<ul>
+							<li class="fragment" >No preparation</li>
+
+						</ul>	
+						</div>
+						<div style = float:right>
+						<p >Cons:
+						<ul>
+							<li class="fragment" >Expensive calculations</li>
+							<li class="fragment" >Not as robust</li>
+						</ul>	
+						
+						</p></div>
+					</div>
+
+					</section>
+					<section>
+						<h2>Structure from Motion and AR</h2>
+						<p>Simultaneously calculating the camera motion and structure of the scene using computer vision algorithms</p>
+
+					</section>
+					
+				</section>
+
+
+				<section>
+					<section>
+						<h2>EXPERIMENTAL STUDIES</h2>
+					<p>What experimental studies have I done?	</p>
+
+					</section>
+					<section>
+						<h2>OpenCV</h2>
+					
+						<ul>
+							<li class="fragment">Open Source computer vision library</li>
+							<li class="fragment">Supports several platforms</li>
+						</ul>		
+
+					</section>
+					<section>
+						<h2>Camera Calibration</h2>
+						<p>Gives the intrinsic parameters and the distortion coefficients.</p>
+					
+						<!-- <ul>
+							<li class="fragment" >It Combines Real and Virtual Objects</li>
+							<li class="fragment" >You can interact with the application in real time</li>
+							<li class="fragment" >It is registered in 3D</li>
+						</ul>	 -->			
+
+					</section>
+					<section>
+						<h2>The Structure from Motion Algorithm</h2>
+						<!-- <p>Tracking provides information about the users viewpoint or the camera position and orientation in 6 DoF. There are different tracking approaches:</p>-->
+						<ul>
+							<li class="fragment" >Feature detection</li>
+							<li class="fragment" >Feature matching and outlier removal</li>
+							<li class="fragment" >Pose Estimation</li>
+							<li class="fragment" >Triangulation</li>
+							<li class ="fragment">Handling multiple views</li>
+
+						</ul>
+					</section>
+					
 				</section>
 
 				<section>
+					<section>
+						<h2>RESULTS</h2>
+					<p>
+							How has things turned out?					
+					</p>
+
+					</section>
+					<section>
+						<h2>Feature detection</h2>
+							<img  style = float:left width = "45%" height = "45%" src="Hessian300img1.jpg" alt="Feature">
+							<img  style = float:right width = "45%" height = "45%" src="Hessian300img2.jpg" alt="Feature">
+					</section>
+
+					<section data-transition="none" data-background-transition="none">
+						<h2>Feature matching</h2>
+							<img src="knnMatch12.jpg" alt="Feature">
+							<p>Matches from view one to view two</p>
+					</section>
+					<section data-transition="none" data-background-transition="none">
+						<h2>Feature matching</h2>
+							<img src="knnMatch21.jpg" alt="Feature">
+							<p>Matches from view two to view one</p>
+					</section>
+
+
+
+					<section data-transition="none" data-background-transition="none">
+						<h2>Outlier removal</h2>
+							<img src="postratioImg1.jpg" alt="Feature">
+							<p>Ratio test from view one to view two</p>
+					</section>
+
+					<section data-transition="none" data-background-transition="none">
+						<h2>Outlier removal</h2>
+							<img src="postratioImg2.jpg" alt="Feature">
+							<p>Ratio test from view two to view one</p>
+					</section>
+
+					<section data-transition="none" data-background-transition="none">
+						<h2>Outlier removal</h2>
+							<img src="postSymTest.jpg" alt="Feature">
+							<p>Matches after symmetry test</p>
+
+					</section>
+					<section data-transition="none" data-background-transition="none">
+						<h2>Outlier removal</h2>
+							<img src="ransac.jpg" alt="Feature">
+							<p>Matches after epipolar constraint test</p>
+
+					</section>
+					<section>
+						<h2>Two view pose estimation</h2>
+							<img src="pc2.png" alt="Feature">
+					</section>
+						<section>
+						<h2>Adding multiple views</h2>
+							<img src="pccameras.png" alt="Feature">
+					</section>
+					<section data-transition="none" >
+						<h2>Integrating virtual object</h2>
+						<img src="snapshot0.png" alt="Feature">
+					</section >
+					<section data-transition="none" data-background-transition="none">
+						<h2>Integrating virtual object</h2>
+						<img src="snapshot1.png" alt="Feature">
+					</section>
+					<section data-transition="none" >
+						<h2>Integrating virtual object</h2>
+						<img src="snapshot2.png" alt="Feature">
+					</section>
+					<section data-transition="none" >
+						<h2>Integrating virtual object</h2>
+						<img src="snapshot3.png" alt="Feature">
+					</section>
+					<section data-transition="none" >
+						<h2>Integrating virtual object</h2>
+						<img src="snapshot4.png" alt="Feature">
+					</section>
+					<section>
+						<h2>Outside views</h2>
+							<img  style = float:left width = "45%" height = "45%" src="snapshotout1.png" alt="Feature">
+							<img  style = float:right width = "45%" height = "45%" src="snapshotout2.png" alt="Feature">
+					</section>
+						<section>
+						<h2>Outside views</h2>
+							<img  style = float:left width = "45%" height = "45%" src="snapshotout8.png" alt="Feature">
+							<img  style = float:right width = "45%" height = "45%" src="snapshotout9.png" alt="Feature">
+					</section>
+
+						<section>
+						<h2>Algorithm performance</h2>
+							<p>A small benchmark test has been performed to see how the different algorithms provided by OpenCV perform. The main thing noticed in this test is that the feature description is slow.</p>
+
+					</section>
+		
+					
+				</section>
+				<section>
+					<section>
+						<h2>CONCLUSION</h2>
+					<p>
+							What are the conclusions of this, is OpenCV mature to use for markerless augmented reality applications and SfM?					
+					</p>
+					<ul>
+							<li class="fragment">Not in real time, computunally heavy</li>
+							<li class="fragment">How could things be speeded up?</li>
+							<li class="fragment">What if enough features are not found?</li>
+							<li class="fragment">What about mobile devices?</li>
+					</ul>	
+					</section>
+					</section>
+
+
+
+				<!--<section>
 					<h2>Point of View</h2>
 					<p>
 						Press <strong>ESC</strong> to enter the slide overview.
@@ -344,11 +573,11 @@ function linkify( selector ) {
 						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
 						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
 					</ul>
-				</section>
+				</section>-->
 
 				<section>
-					<h1>THANK YOU!</h1>
-				</section>-->
+					<h2>THANK YOU!</h2>
+				</section>
 
 			</div>
 
